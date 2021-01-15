@@ -14,20 +14,26 @@ Se requiere la instalación de [git](https://git-scm.com/book/en/v2/Getting-Star
     ```
     git clone https://github.com/EluneyM/laravel7-docker.git 
     ```
-
+    
 2. Moverse a la raíz del proyecto
 
     ```
     cd laravel7-docker
     ```
 
-3. Copiar archivo .env.example de la raíz del proyecto
+3. Desvincular git
+
+    ```
+    sudo rm -r .git
+    ```
+
+4. Copiar archivo .env.example de la raíz del proyecto
 
     ```
     cp .env.example .env
     ```
 
-4. Copiar archivo src/.env.example de la carpeta de Laravel
+5. Copiar archivo src/.env.example de la carpeta de Laravel
 
     ```
     cp src/.env.example src/.env
@@ -39,43 +45,43 @@ Se requiere la instalación de [git](https://git-scm.com/book/en/v2/Getting-Star
     vim .env
     ```
 
-6. Copiar el archivo docker-compose.dist.yml
+7. Copiar el archivo docker-compose.dist.yml
 
     ```
     cp docker-compose.dist.yml docker-compose.yml
     ```
 
-7. Editar los puertos si entran en conflicto con otros contenedores
+8. Editar los puertos si entran en conflicto con otros contenedores
 
     ```
     vim docker-compose.yml
     ```
 
-8. Reconstruir imagen
+9. Reconstruir imagen
 
     ```
     docker-compose up -d --build
     ```
 
-9. Instalar dependencias
+10. Instalar dependencias
 
     ```
     docker-compose run --rm composer update
     ```
 
-10. Instalar npm
+11. Instalar npm
 
     ```
     docker-compose run --rm npm install
     ```
 
-11. Ejecutar
+12. Ejecutar
 
     ```
     docker-compose run --rm npm run dev
     ```
 
-12. Ejecutar migraciones
+13. Ejecutar migraciones
 
     ```
     docker-compose run --rm artisan migrate:refresh

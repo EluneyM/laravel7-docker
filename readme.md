@@ -1,6 +1,6 @@
-# Tierras - Registro e Inscripción de Parcelas
+# Laravel 7 dockerizado para proyectos
 
-El sistema consiste en dos formularios abiertos al público para el registro e inscripción de parcelas. También incluye un backend con login que utiliza el sistema integral de seguridad desarrollado en Altec.
+Laravel 7 instalación limpia, dockerizado, con composer, npm y artisan en contenedores separados para evitar instalar dependencias en maquina host.
 
 ## Requerimientos
 
@@ -12,13 +12,13 @@ Se requiere la instalación de [git](https://git-scm.com/book/en/v2/Getting-Star
 1. Clonar el proyecto
 
     ```
-    git clone https://git.altec.com.ar/emerillan/formulario-tierras-docker.git
+    git clone https://github.com/EluneyM/laravel7-docker.git 
     ```
 
 2. Moverse a la raíz del proyecto
 
     ```
-    cd formulario-tierras-docker
+    cd laravel7-docker
     ```
 
 3. Copiar archivo .env.example de la raíz del proyecto

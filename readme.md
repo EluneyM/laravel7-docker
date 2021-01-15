@@ -121,4 +121,4 @@ Se requiere la instalación de [git](https://git-scm.com/book/en/v2/Getting-Star
     ```
 
 ## Licencia
-Sin determinar
+[MIT](https://github.com/EluneyM/laravel7-docker/blob/main/LICENSE)
